@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #gallery h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #f0a500;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 75%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(240, 165, 0, 0.8);
+}
+</style>
+</head>
+<body>
+    <section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="IMG1.jpg" alt="Photo 1" height="750px" width="750px"/>
+    <img src="IMG2.jpg" alt="Photo 2" height="750px" width="750px"/>
+    <img src="IMG4.jpg" alt="Photo 3" height="750px" width="750px"/>
+    <img src="IMG4.jpg" alt="Photo 3" height="750px" width="750px"/>
+    <img src="IMG5.jpg" alt="Photo 4" height="750px" width="750px"/>
+    <img src="IMG6.jpg" alt="Photo 5" height="750px" width="750px"/>
+    <img src="IMG7.jpg" alt="Photo 6" height="750px" width="750px"/>
+    <img src="IMG8.jpg" alt="Photo 6" height="750px" width="750px"/>
+    <img src="IMG10.jpg" alt="Photo 6" height="750px" width="750px"/>
+  </div>
+</section>
+
+</body>
+</html>
